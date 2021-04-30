@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.item__bloque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0rem;
+}
+.item__num {
+  margin-right: 1rem;
+  color: var(--rojo);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.item__nombre {
+  color: var(--naranja);
+  margin: 0;
+}
+.item__precio {
+  color: var(--verdedark);
+}
+
+.item__delete {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  border-radius: 5px;
+  border-color: var(--blanco);
+  cursor: pointer;
+}

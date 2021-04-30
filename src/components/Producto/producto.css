@@ -1,0 +1,59 @@
+.producto {
+  background-color: var(--blanco);
+  margin: 3rem 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 1px 11px 8px rgba(0, 0, 0, 0.15);
+}
+.producto__title {
+  color: var(--blanco);
+  font-size: 3rem;
+  text-align: center;
+  background-color: var(--naranja);
+  border-radius: 20px;
+}
+.producto__campo {
+  display: flex;
+  flex-direction: column;
+}
+.producto__label {
+  color: var(--azul);
+  text-align: left;
+  font-size: 2rem;
+}
+.producto__input {
+  border: 3px solid var(--azul);
+  height: 50px;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 2.5rem;
+  color: var(--azul);
+  font-family: "Pacidico Regular";
+  padding: 0rem 2rem;
+}
+
+.producto__input:focus {
+  outline: none;
+}
+
+.producto__button {
+  border: none;
+  font-size: 3rem;
+  background-color: var(--azul);
+  color: var(--blanco);
+  font-family: "Pacidico Regular";
+  padding: 0rem 3rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.producto__form {
+  background-color: var(--naranjalight);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.producto__disabled {
+  border: none;
+}

@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18rem 1rem 3rem 1rem;
+}
+.hero__title {
+  color: var(--azul);
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: 5rem;
+  padding: 0rem 3rem;
+}

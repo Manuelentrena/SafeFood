@@ -1,0 +1,18 @@
+.header {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blanco);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: 5px solid var(--rojo);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+.header__title {
+  color: var(--rojo);
+  font-size: 4rem;
+  margin: 0;
+}
