@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/safefood/static/css/main.104e7abf.chunk.css",
+    "main.js": "/safefood/static/js/main.75c4bc5a.chunk.js",
+    "main.js.map": "/safefood/static/js/main.75c4bc5a.chunk.js.map",
+    "runtime-main.js": "/safefood/static/js/runtime-main.fa438ae9.js",
+    "runtime-main.js.map": "/safefood/static/js/runtime-main.fa438ae9.js.map",
+    "static/js/2.5d6c78ee.chunk.js": "/safefood/static/js/2.5d6c78ee.chunk.js",
+    "static/js/2.5d6c78ee.chunk.js.map": "/safefood/static/js/2.5d6c78ee.chunk.js.map",
+    "index.html": "/safefood/index.html",
+    "static/css/main.104e7abf.chunk.css.map": "/safefood/static/css/main.104e7abf.chunk.css.map",
+    "static/js/2.5d6c78ee.chunk.js.LICENSE.txt": "/safefood/static/js/2.5d6c78ee.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/safefood/static/media/Pacifico-Regular.93cd59ff.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa438ae9.js",
+    "static/js/2.5d6c78ee.chunk.js",
+    "static/css/main.104e7abf.chunk.css",
+    "static/js/main.75c4bc5a.chunk.js"
+  ]
+}
