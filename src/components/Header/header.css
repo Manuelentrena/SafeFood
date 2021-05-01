@@ -10,9 +10,29 @@
   width: 100vw;
   position: fixed;
   top: 0;
+  grid-area: header;
+}
+@media (min-width: 1120px) {
+  .header {
+    grid-area: header;
+    position: static;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--naranjalight);
+    border-bottom: 5px solid var(--naranjalight);
+    margin-top: 2rem;
+    justify-content: left;
+    padding-left: 5rem;
+  }
 }
 .header__title {
   color: var(--rojo);
   font-size: 4rem;
   margin: 0;
+}
+
+@media (min-width: 1120px) {
+  .header__title {
+    padding-left: 3rem;
+  }
 }

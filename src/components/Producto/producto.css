@@ -4,7 +4,15 @@
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 1px 1px 11px 8px rgba(0, 0, 0, 0.15);
+  grid-area: producto;
 }
+
+@media (min-width: 1120px) {
+  .producto {
+    grid-area: producto;
+  }
+}
+
 .producto__title {
   color: var(--blanco);
   font-size: 3rem;
@@ -27,7 +35,7 @@
   border-radius: 20px;
   width: 100%;
   font-size: 2.5rem;
-  color: var(--azul);
+  color: var(--azullight);
   font-family: "Pacidico Regular";
   padding: 0rem 2rem;
 }
@@ -38,7 +46,7 @@
 
 .producto__button {
   border: none;
-  font-size: 3rem;
+  font-size: 2.6rem;
   background-color: var(--azul);
   color: var(--blanco);
   font-family: "Pacidico Regular";
@@ -46,6 +54,13 @@
   border-radius: 20px;
   margin-top: 3rem;
   width: 100%;
+  box-shadow: 5px 5px 15px -3px #5f5f5f;
+  border: 3px solid var(--azullight);
+}
+
+.producto__button:hover {
+  cursor: pointer;
+  background-color: var(--azullight);
 }
 
 .producto__form {

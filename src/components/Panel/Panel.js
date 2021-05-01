@@ -11,7 +11,7 @@ const Panel = ({ credito, restante }) => {
   return (
     <div className={"panel " + oculto}>
       <div className="panel__bloque">
-        <p className="panel__title">Presupuesto:</p>
+        <p className="panel__title">Gastar:</p>
         <p className="panel__result verde">{credito}€</p>
       </div>
       <div className="panel__bloque">

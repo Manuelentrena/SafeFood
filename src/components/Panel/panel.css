@@ -12,6 +12,7 @@
   border-top-right-radius: 20px;
   border-top: 5px solid var(--naranjalight);
   transition: all 0.5s ease-out;
+  grid-area: panel;
 }
 
 .oculto {
@@ -31,4 +32,17 @@
 }
 .panel__title {
   color: var(--white);
+}
+@media (min-width: 1120px) {
+  .panel {
+    grid-area: panel;
+    position: static;
+    height: fit-content;
+    border-radius: 20px;
+    margin: 0rem 2rem;
+    margin-top: 5rem;
+  }
+  .oculto {
+    transform: none;
+  }
 }

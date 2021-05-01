@@ -11,7 +11,7 @@
   --azullight: #736f97;
   --naranja: #da9022;
   --naranjalight: #ffe4bc;
-  --verde: #b5c870;
+  --verde: #cddd93;
   --verdedark: #8ba52e;
   --blanco: #ffffff;
   --negro: #000000;
@@ -51,14 +51,47 @@ body {
   height: 100%;
 }
 
-/* .app {
-} */
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "hero"
+    "presupuesto"
+    "producto"
+    "list"
+    "panel";
+}
+
+@media (min-width: 1120px) {
+  .root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto auto; */
+    grid-template-rows: 22rem 12rem 66.5rem;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header presupuesto"
+      "hero panel"
+      "producto list";
+  }
+}
 
 .error {
   color: var(--rojo);
   font-size: 2rem;
   text-align: center;
   background-color: var(--rojolight);
+  border-radius: 2rem;
+}
+
+.exito {
+  color: var(--verdedark);
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--verde);
   border-radius: 2rem;
 }
 
@@ -73,9 +106,3 @@ body {
 .rojo {
   color: var(--rojo) !important;
 }
-
-/* @media (max-width: 1120px) {
-  .app {
-    flex-direction: column-reverse;
-  }
-} */

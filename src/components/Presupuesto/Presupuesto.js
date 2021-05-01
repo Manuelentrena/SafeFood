@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./presupuesto.css";
 
-const Presupuesto = ({ setCredito, setRestante }) => {
+const Presupuesto = ({ setCredito, setRestante, gasto }) => {
   // Definir el state
   const [presupuesto, setPresupuesto] = useState(0);
   const [error, setError] = useState(false);
+  const [exito, setExito] = useState(false);
 
   //Funcion createPresupuesto
   const addPresupuesto = (e) => {
@@ -16,14 +17,21 @@ const Presupuesto = ({ setCredito, setRestante }) => {
     e.preventDefault();
 
     //validar
-    if (presupuesto < 1 || isNaN(presupuesto)) {
+    if (presupuesto < gasto || isNaN(presupuesto) || presupuesto === 0) {
       setError(true);
       return;
     }
 
     setError(false);
+    /* Mostramos mensaje de exito */
+    setExito(true);
+    /* Lo quitamos a los */
+    setTimeout(() => {
+      setExito(false);
+    }, 3000);
+
     setCredito(presupuesto);
-    setRestante(presupuesto);
+    setRestante(presupuesto - gasto);
   };
 
   return (
@@ -42,6 +50,7 @@ const Presupuesto = ({ setCredito, setRestante }) => {
         </button>
       </div>
       {error ? <p className="error">Presupuesto no Válido</p> : null}
+      {exito ? <p className="exito">Presupuesto agregado</p> : null}
     </form>
   );
 };

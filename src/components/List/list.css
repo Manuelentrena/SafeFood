@@ -4,7 +4,15 @@
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 1px 1px 11px 8px rgba(0, 0, 0, 0.15);
+  grid-area: list;
 }
+
+@media (min-width: 1120px) {
+  .list {
+    grid-area: list;
+  }
+}
+
 .list__listado {
   color: var(--blanco);
   font-size: 3rem;
@@ -19,6 +27,14 @@
   border-top: 3px solid var(--azul);
   border-bottom: 3px solid var(--azul);
   overflow-y: scroll;
+  max-height: 300px;
+}
+
+@media (min-width: 1120px) {
+  .list__body {
+    grid-area: producto;
+    height: 65%;
+  }
 }
 .list__footer {
   background-color: var(--naranjalight);
