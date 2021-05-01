@@ -4,7 +4,9 @@ Este proyecto esta creado con [Create React App](https://github.com/facebook/cre
 
 ## Descripción
 
-Aplicación de la cesta de la compra creado con React.
+Aplicación de la cesta de la compra creado con React. Puedes crear un presupuesto y manterner una lista dinámica de productos hasta rellenar el presupuesto. Adaptado para mobiles y desktop.
+
+![safefood](src/assets/img/demo.png)
 
 ## Available Scripts
 
