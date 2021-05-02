@@ -6,6 +6,7 @@
   /* COLORES */
 
   --rojo: #d56d83;
+  --alert: #da284f;
   --rojolight: #faced7;
   --azul: #57537d;
   --azullight: #736f97;
@@ -104,5 +105,5 @@ body {
 }
 
 .rojo {
-  color: var(--rojo) !important;
+  color: var(--alert) !important;
 }
