@@ -72,7 +72,7 @@ const Producto = ({ credito, addProductoToList, gasto }) => {
               className="producto__input"
               name="nombre"
               required
-              placeholder="Nombre..."
+              placeholder="Introduce un nombre..."
               onChange={addInfoProducto}
               value={nombre}
             ></input>
@@ -85,7 +85,7 @@ const Producto = ({ credito, addProductoToList, gasto }) => {
               className="producto__input"
               name="unidades"
               required
-              placeholder="Unidades..."
+              placeholder="0"
               onChange={addInfoProducto}
               value={unidades}
             ></input>
@@ -98,7 +98,7 @@ const Producto = ({ credito, addProductoToList, gasto }) => {
               name="precio"
               type="number"
               required
-              placeholder="Precio..."
+              placeholder="0€"
               onChange={addInfoProducto}
               value={precio}
             ></input>

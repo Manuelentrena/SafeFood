@@ -7,15 +7,25 @@ import Panel from "./components/Panel/Panel";
 import List from "./components/List/List";
 
 function App() {
+  /* Productos y presupuesto en localstorage */
+  let productosInitials = JSON.parse(localStorage.getItem("productos"));
+  if (!productosInitials) {
+    productosInitials = [];
+  }
+
+  let presupuestoInitial = JSON.parse(localStorage.getItem("presupuesto"));
+  if (!presupuestoInitial) {
+    presupuestoInitial = 0;
+  }
+
   //State del presupuesto y el restante
-  const [productos, setProductos] = useState([]);
-  const [credito, setCredito] = useState(0);
+  const [productos, setProductos] = useState(productosInitials);
+  const [credito, setCredito] = useState(presupuestoInitial);
   const [restante, setRestante] = useState(0);
   const [gasto, setGasto] = useState(0);
 
   /* Cada vez que cambio productos */
   useEffect(() => {
-    /* if (productos.length > 0) { */
     /* Actualizamos Gasto*/
     setGasto(
       productos.reduce((acumulador, producto) => {
@@ -24,7 +34,9 @@ function App() {
     );
     /* Actualizamos Restante*/
     setRestante(credito - gasto);
-    /*     } */
+    /* Administrar LocalStorage a través de useEffect*/
+    localStorage.setItem("presupuesto", JSON.stringify(credito));
+    localStorage.setItem("productos", JSON.stringify(productos));
   }, [productos, credito, gasto]);
 
   /* Funcion para agragar nuevo producto */

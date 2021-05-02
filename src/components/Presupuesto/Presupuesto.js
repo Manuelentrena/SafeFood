@@ -41,7 +41,7 @@ const Presupuesto = ({ setCredito, setRestante, gasto }) => {
         <input
           className="presupuesto__input"
           type="number"
-          placeholder="Introduce tu presupuesto"
+          placeholder="Cantidad.."
           onChange={addPresupuesto}
           required
         ></input>
